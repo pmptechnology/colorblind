@@ -2,10 +2,10 @@
 <widget id="com.pmptechnology.colorblind" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
     <name>Colorblind Simulator</name>
     <description>
-        Hello World sample application that responds to the deviceready event.
+        A Tech Incubator at Queens College Project. The Colorblind Simulator is an application that filters a photo on your mobile device. There are eight filters to choose from and each represents a particular variety of clinical colorblindness. Use this app to better understand what someone who is colorblind sees and how it differs from healthy vision. This project is managed by Philip Parzygnat; Queens College 2007. It is being hosted by PMP Technology, which is a technology company established by Phil for application development pursuits.
     </description>
-    <author email="support@phonegap.com" href="http://phonegap.com">
-        PhoneGap Team
+    <author email="philip.parzygnat@gmail.com" href="http://philparzygnat.com">
+        Philip Parzygnat for TIQC: Tech Incubator at Queens College
     </author>
     <content src="index.html" />
     <preference name="DisallowOverscroll" value="true" />
