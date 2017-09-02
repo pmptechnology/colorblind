@@ -13,7 +13,10 @@
             "id": "cordova-plugin-camera@~2.1.1"
         },
         "is_top_level": true,
-        "variables": {}
+        "variables": {
+            "CAMERA_USAGE_DESCRIPTION": "Photos will be used as input for colorblind filtering.",
+            "PHOTOLIBRARY_USAGE_DESCRIPTION": "Photos will be used as input for colorblind filtering."
+        }
     },
     "cordova-plugin-media-capture": {
         "source": {
