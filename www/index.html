@@ -149,7 +149,7 @@
         <div class="collapse navbar-collapse navbar-menubuilder">
           <ul class="nav navbar-nav">
             <li><a href="http://media.pmplabs.com/colorblind/presentation-print.pdf" target="_blank">Documentation</a></li>
-            <li><button type="button" onclick="camera.getPhoto;">Choose a File</button></li>
+            <li onclick="navigator.camera.getPicture(readImage, null, { quality: 50, destinationType: Camera.DestinationType.DATA_URL});"><i class="fa fa-file-image-o" aria-hidden="true"></i> Choose a file</li>
             <!--
             <li><button type="button" onclick="getPhoto(pictureSource.PHOTOLIBRARY);">Choose a File</button></li>
             <li><form action="#"><input type="file" name="file" id="file" accept="image/*" class="inputfile"><label for="file"><i class="fa fa-file-image-o" aria-hidden="true"></i> Choose a file</label></form></li>
