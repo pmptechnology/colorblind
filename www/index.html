@@ -55,8 +55,9 @@
 
 <body>
     <div class="app">
-        <div id="custom-bootstrap-menu" class="navbar navbar-default" role="navigation">
+    <div id="custom-bootstrap-menu" class="navbar navbar-default" role="navigation">
     <div class="container-fluid">
+        <div class="row" style="height:100px;"></div>
         <div class="navbar-header"><a class="navbar-brand" href="/"><img src=img/identity/tiqc-colorblind.png class="img-responsive" style="max-height:20px;"/></a>
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-menubuilder"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
             </button>
@@ -64,7 +65,7 @@
         <div class="collapse navbar-collapse navbar-menubuilder">
           <ul class="nav navbar-nav">
             <li><a href="http://media.pmplabs.com/colorblind/presentation-print.pdf" target="_blank">Documentation</a></li>
-            <li onclick="openFilePicker(toFilter)"><i class="fa fa-file-image-o" aria-hidden="true"></i> Choose a file</li>
+            <li><a href="#" onclick="openFilePicker(toFilter)"><i class="fa fa-file-image-o" aria-hidden="true"></i> Choose a file</a></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
@@ -77,6 +78,7 @@
             <div style="margin: auto; padding:20px;">
               <p>Please start by selecting an image via the menu dropdown.</p>
               <hr />
+              <a href="#" onclick="openFilePicker(toFilter)"><i class="fa fa-file-image-o" aria-hidden="true"></i> Choose a file</a>
               <p>At present the filters are not fully acccurate. If you would like to help with this application please contact admin@pmptechnology.com.</p>
               <canvas id="canvas1" width="10000" height="10000" style="display:none;"></canvas>
               <img id="set1" scr="" style="word-wrap:break-word; display:none; margin:auto;" class="img-responsive">
