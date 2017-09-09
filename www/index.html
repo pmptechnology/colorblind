@@ -18,8 +18,9 @@
     under the License.
 -->
 <html>
-    <head>
-        <!--
+
+<head>
+    <!--
         Customize this policy to fit your own app's needs. For more guidance, see:
             https://github.com/apache/cordova-plugin-whitelist/blob/master/README.md#content-security-policy
         Some notes:
@@ -28,22 +29,83 @@
             * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
                 * Enable inline JS: add 'unsafe-inline' to default-src
         -->
-        <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">
-        <meta name="format-detection" content="telephone=no">
-        <meta name="msapplication-tap-highlight" content="no">
-        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
-        <link rel="stylesheet" type="text/css" href="css/index.css">
-        <title>Hello World</title>
-    </head>
-    <body>
-        <div class="app">
-            <h1>Apache Cordova</h1>
-            <div id="deviceready" class="blink">
-                <p class="event listening">Connecting to Device</p>
-                <p class="event received">Device is Ready</p>
-            </div>
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+    <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
+    <link href="//fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|PT+Sans+Narrow|Source+Sans+Pro:200,300,400,600,700,900&amp;subset=all" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="/stylesheets/bootstrap.min.css">
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+    <link rel="icon" href="/favicon.ico">
+    <title>TIQC Colorblind Simulator</title>
+    <script>
+    var toFilter;
+    </script>
+</head>
+
+<body>
+    <div class="app">
+        <div id="custom-bootstrap-menu" class="navbar navbar-default" role="navigation">
+    <div class="container-fluid">
+        <div class="navbar-header"><a class="navbar-brand" href="/"><img src=img/identity/tiqc-colorblind.png class="img-responsive" style="max-height:20px;"/></a>
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-menubuilder"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+            </button>
         </div>
-        <script type="text/javascript" src="cordova.js"></script>
-        <script type="text/javascript" src="js/index.js"></script>
-    </body>
+        <div class="collapse navbar-collapse navbar-menubuilder">
+          <ul class="nav navbar-nav">
+            <li><a href="http://media.pmplabs.com/colorblind/presentation-print.pdf" target="_blank">Documentation</a></li>
+            <li onclick="openFilePicker(toFilter)"><i class="fa fa-file-image-o" aria-hidden="true"></i> Choose a file</li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+    <div class="container">
+
+      <div class="starter-template">
+        <div class="row">
+          <div class="column-xs-12">
+            <div style="margin: auto; padding:20px;">
+              <p>Please start by selecting an image via the menu dropdown.</p>
+              <hr />
+              <p>At present the filters are not fully acccurate. If you would like to help with this application please contact admin@pmptechnology.com.</p>
+              <canvas id="canvas1" width="10000" height="10000" style="display:none;"></canvas>
+              <img id="set1" scr="" style="word-wrap:break-word; display:none; margin:auto;" class="img-responsive">
+              <canvas id="canvas2" width="10000" height="10000" style="display:none;"></canvas>
+              <img id="set2" scr="" style="word-wrap:break-word; display:none; margin:auto;" class="img-responsive">
+              <br />
+              <br />
+              <p align="center"><select id="selector" name="filter" onchange="applyFilter()" style="display:none;">
+                <option value="">Select Filter</option>
+                <option value="identity">Identity</option>
+                <option value="achromatomaly">Achromatomaly</option>
+                <option value="achromatopsia">Achromatopsia</option>
+                <option value="deuteranomaly">Deuteranomaly</option>
+                <option value="deuteranopia">Deuteranopia</option>
+                <option value="protanomaly">Protanomaly</option>
+                <option value="protanopia">Protanopia</option>
+                <option value="tritanomaly">Tritanomaly</option>
+                <option value="tritanopia">Tritanopia</option>
+              </select></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div><!-- /.container -->
+</div>
+    </div>
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+</body>
+
 </html>
