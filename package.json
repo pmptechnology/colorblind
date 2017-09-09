@@ -1,5 +1,5 @@
 {
-    "name": "com.pmplabs.colorblindv1",
+    "name": "com.pmptechnology.colorblind",
     "displayName": "ColorblindSimulator",
     "version": "1.0.0",
     "description": "A sample Apache Cordova application that responds to the deviceready event.",
