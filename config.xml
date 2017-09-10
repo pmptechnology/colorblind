@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.pmptechnology.colorblind" version="1.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+<widget id="com.pmptechnology.colorblind" version="1.0.2" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
     <name>Colorblind Simulator by PMP Technology</name>
     <description>
        A Tech Incubator at Queens College Project. The Colorblind Simulator is an application that filters a photo on your mobile device. There are eight filters to choose from and each represents a particular variety of clinical colorblindness. Use this app to better understand what someone who is colorblind sees and how it differs from healthy vision. This project is managed by Philip Parzygnat; Queens College 2007. It is being hosted by PMP Technology, which is a technology company established by Phil for application development pursuits.
