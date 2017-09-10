@@ -44,26 +44,3 @@ var app = {
 };
 
 app.initialize();
-
-function openFilePicker(selection) {
-
-    var srcType = Camera.PictureSourceType.SAVEDPHOTOALBUM;
-    var options = setOptions(srcType);
-    var func = createNewFileEntry;
-
-    if (selection == "picker-thmb") {
-        // To downscale a selected image,
-        // Camera.EncodingType (e.g., JPEG) must match the selected image type.
-        options.targetHeight = 100;
-        options.targetWidth = 100;
-    }
-
-    navigator.camera.getPicture(function cameraSuccess(imageUri) {
-
-        // Do something with image
-
-    }, function cameraError(error) {
-        console.debug("Unable to obtain picture: " + error, "app");
-
-    }, options);
-}
