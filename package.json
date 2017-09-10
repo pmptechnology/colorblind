@@ -1,8 +1,8 @@
 {
     "name": "com.pmptechnology.colorblind",
-    "displayName": "ColorblindSimulator",
-    "version": "1.0.0",
-    "description": "A sample Apache Cordova application that responds to the deviceready event.",
+    "displayName": "Colorblind Simulator by PMP Technology",
+    "version": "1.0.1",
+    "description": "A Tech Incubator at Queens College Project. The Colorblind Simulator is an application that filters a photo on your mobile device. There are eight filters to choose from and each represents a particular variety of clinical colorblindness. Use this app to better understand what someone who is colorblind sees and how it differs from healthy vision. This project is managed by Philip Parzygnat; Queens College 2007. It is being hosted by PMP Technology, which is a technology company established by Phil for application development pursuits.",
     "main": "index.js",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1"
